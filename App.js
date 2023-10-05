@@ -36,7 +36,7 @@ const App = () => {
             if(route.name === 'Home') iconName = 'home';
             else if(route.name === 'Friends') iconName = 'account-multiple-outline';
             else if(route.name === 'Groups') iconName = 'account-group'
-            else if(route.name === 'Profile') iconName = 'account-group'
+            else if(route.name === 'Profile') iconName = 'account-circle-outline'
             else if(route.name === 'Notifications') iconName = 'bell-outline'
             else if(route.name === 'Menu') iconName = 'menu'
             return <MaterialCommunityIcons name={iconName} size={24} color={color}/>
