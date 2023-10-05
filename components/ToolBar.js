@@ -9,7 +9,7 @@ const Container = styled.View`
 
 const Row = styled.View`
     flex-direction: row;
-    background: blue;
+    background: #FFFFFF;
     width: 100%;
     padding: 0 11px;
     align-items: center;`
