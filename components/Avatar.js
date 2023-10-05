@@ -7,7 +7,7 @@ const Container = styled.View`
     position: relative;`;
 
 const ProfileImage = styled.Image`
-    witdh: 40px;
+    width: 40px;
     height: 40px;
     border-radius: 20px;`;
 
