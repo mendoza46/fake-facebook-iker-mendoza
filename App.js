@@ -25,7 +25,6 @@ const App = () => {
       <Header/>
       <NavigationContainer>
         <Tab.Navigator
-      backgroundColor='blue'
         screenOptions={({ route }) => ({
           swipeEnabled: true,
           tabBarshowIcon: true,
@@ -45,7 +44,7 @@ const App = () => {
         })}
         tabBarOptions={{
           style: {
-            height: 80,
+            height: 90,
           },
         }}
         >
