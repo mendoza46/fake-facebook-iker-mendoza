@@ -19,7 +19,8 @@ const Room = styled.TouchableOpacity`
     flex-direction: row;
     align-items: center;
     border: 1px solid #82b1dd;
-    padding: 0 15px;
+    border-radius: 20px;
+    padding: 0 6px;
     margin-right: 12px;
 `;
 
