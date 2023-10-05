@@ -42,11 +42,6 @@ const App = () => {
             return <MaterialCommunityIcons name={iconName} size={24} color={color}/>
           },
         })}
-        tabBarOptions={{
-          style: {
-            height: 90,
-          },
-        }}
         >
           <Tab.Screen name="Home" component={Home}/>
           <Tab.Screen name="Friends" component={Friends}/>
