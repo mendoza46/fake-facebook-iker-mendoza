@@ -19,23 +19,19 @@ const App = () => {
   return(
     <>
     <StatusBar
-    backgroundColor='red'
+    backgroundColor='#FFFFFF'
     barStyle='dark-content'
     />
-    <ScrollView
-      backgroundColor='green'
-    >
       <Header/>
       <NavigationContainer>
         <Tab.Navigator
-        swipeEnabled='true'
-        tabBarOptions={{
-          showIcon: true,
-          showLabel: false,
-          activeTintColor: '#3a86e9',
-          inactiveTintColor: '#9F9F9F',
-        }}
-        screenOptions={({route}) => ({
+      backgroundColor='blue'
+        screenOptions={({ route }) => ({
+          swipeEnabled: true,
+          tabBarshowIcon: true,
+          tabBarshowLabel: false,
+          tabBaractiveTintColor: '#3a86e9',
+          tabBarinactiveTintColor: '#9F9F9F',        
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if(route.name === 'Home') iconName = 'home';
@@ -44,9 +40,14 @@ const App = () => {
             else if(route.name === 'Profile') iconName = 'account-group'
             else if(route.name === 'Notifications') iconName = 'bell-outline'
             else if(route.name === 'Menu') iconName = 'menu'
-            return <MaterialCommunityIcons name={iconName} size={26} color={color}/>
+            return <MaterialCommunityIcons name={iconName} size={24} color={color}/>
           },
         })}
+        tabBarOptions={{
+          style: {
+            height: 80,
+          },
+        }}
         >
           <Tab.Screen name="Home" component={Home}/>
           <Tab.Screen name="Friends" component={Friends}/>
@@ -56,7 +57,6 @@ const App = () => {
           <Tab.Screen name="Menu" component={Menu}/>
         </Tab.Navigator>
       </NavigationContainer>
-    </ScrollView>
     </>
   )
 }
