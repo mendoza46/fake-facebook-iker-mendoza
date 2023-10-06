@@ -14,7 +14,7 @@ const Profile = () => {
     return(
         <View>
             <ProfileToolBar />
-            <ProfilePhoto></ProfilePhoto>
+            <ProfilePhoto />
             <ProfileAvatar />
         </View>
     )

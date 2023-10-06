@@ -1,15 +1,17 @@
 import React from "react";
 import styled from 'styled-components/native';
+import { Text } from "react-native";
 
 const Container = styled.View`
     margin-top: -65px;
-    width: 40px;
+    width: 150px;
     height: 40px;
     position: relative;
+    // background: #000000
 `;
 
 const ProfileImage = styled.Image`
-    margin-left: -40px;
+    margin-left: 13px;
     width: 125px;
     height: 125px;
     border-radius: 200px;
@@ -22,7 +24,7 @@ const ProfileImage = styled.Image`
 const UserActive = styled.View`
     position: absolute;
     bottom: -80px;
-    right: -35px;
+    right: 20px;
     width: 23px;
     height: 23px;
     border-radius: 15px;
@@ -30,11 +32,21 @@ const UserActive = styled.View`
     border: 2px solid #FFFFFF;
 `;
 
+
+const User = styled.Text`
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222121;
+`;
+
 const ProfileAvatar = () => {
     return(
         <Container>
             <ProfileImage source={require('../assets/vale.jpeg')} />
             <UserActive />
+            <User>Valentino Rossi</User>
         </Container>
     )
 }
