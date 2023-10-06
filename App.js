@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, ScrollView, Text, View } from 'react-native';
+import { ScrollView, View  } from "react-native";
 import Header from './components/Header';
 import Home from './screens/Home';
 import Friends from './screens/Friends';
@@ -12,6 +12,7 @@ import Profile from './screens/Profile';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+import styled from 'styled-components';
 
 const Tab = createMaterialTopTabNavigator();
 

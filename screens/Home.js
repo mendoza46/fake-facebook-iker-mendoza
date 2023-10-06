@@ -6,6 +6,7 @@ import MainSeparator from "../components/MainSeparator";
 import Users from "../components/Users";
 import Story from "../components/Story";
 import Post from "../components/Post";
+import { ScrollView } from "react-native";
 
 const View = styled.View`
     flex: 1;
@@ -13,6 +14,7 @@ const View = styled.View`
 
 const Home = () => {
     return(
+        <ScrollView>
         <View>
             <ToolBar />
             <MainSeparator />
@@ -23,6 +25,7 @@ const Home = () => {
             <Post />
             <MainSeparator />
         </View>
+        </ScrollView>
     )
 }
 

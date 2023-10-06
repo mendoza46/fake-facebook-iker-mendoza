@@ -1,5 +1,5 @@
 import React from "react";
-import { View  } from "react-native";
+import { ScrollView, View  } from "react-native";
 import styled from 'styled-components/native';
 import Avatar from "./Avatar";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
@@ -101,9 +101,11 @@ const Text = styled.Text`
 const Post = () => {
     return(
         <>
+        {/* <ScrollView> */}
             {fakeUsers.map((user, i) => {
                 return(
                     <Container key={i.toString()}>
+                        
                         <Header>
                             <Row>
                                 <Avatar source={user.source} />
@@ -120,6 +122,7 @@ const Post = () => {
                         </Header>
                         <PostContent>{user.postContent}</PostContent>
                         <Photo source={user.postImage} />
+                        
                         <Footer>
                             <FooterCount>
                                 <Row>
@@ -155,6 +158,7 @@ const Post = () => {
                     </Container>
                 )
             })}
+            {/* </ScrollView> */}
         </>
     )
 }
