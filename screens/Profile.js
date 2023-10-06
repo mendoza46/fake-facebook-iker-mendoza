@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import styled from 'styled-components/native';
+import ProfileToolBar from "../components/ProfileToolBar";
 
 const View = styled.View`
     align-items: center;
@@ -9,7 +10,7 @@ const View = styled.View`
 const Profile = () => {
     return(
         <View>
-            <Text>Profile Screen</Text>
+            <ProfileToolBar />
         </View>
     )
 }
