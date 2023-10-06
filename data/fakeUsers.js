@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {
         source: require('../assets/0.jpg'), 
         online:Math.random() >= 0.5,
