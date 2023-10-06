@@ -5,7 +5,7 @@ import { Text } from "react-native";
 const Container = styled.View`
     margin-top: -65px;
     width: 150px;
-    height: 40px;
+    height: 170px;
     position: relative;
     // background: #000000
 `;
@@ -23,7 +23,7 @@ const ProfileImage = styled.Image`
 
 const UserActive = styled.View`
     position: absolute;
-    bottom: -80px;
+    bottom: 50px;
     right: 20px;
     width: 23px;
     height: 23px;
