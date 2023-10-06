@@ -4,14 +4,14 @@ import { Text } from "react-native";
 
 const Container = styled.View`
     margin-top: -65px;
-    width: 150px;
+    width: 100%;
     height: 170px;
     position: relative;
-    // background: #000000
+    align-items: center;
 `;
 
 const ProfileImage = styled.Image`
-    margin-left: 13px;
+    margin-left: px;
     width: 125px;
     height: 125px;
     border-radius: 200px;
@@ -24,7 +24,7 @@ const ProfileImage = styled.Image`
 const UserActive = styled.View`
     position: absolute;
     bottom: 50px;
-    right: 20px;
+    right: 145px;
     width: 23px;
     height: 23px;
     border-radius: 15px;
